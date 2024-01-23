@@ -6,10 +6,105 @@
     <title>Hi Hockey</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'hockey-primary': '#FF4240',
+          'hockey-primary-bg': 'rgba(231, 111, 81, 0.10)',
+        }
+      }
+    }
+  }
+</script> -->
+<style>
+    .font-manrope{
+        font-family: 'manrope' , sans-serif;
+    }
+</style>
 
 </head>
-<body>
+<body class="font-manrope">
     <header>
+      <div>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Page</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+                
+                  
+            </div>
+            <a class="text-xl">Hockey’s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Page</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+              
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-error text-white">Get Ticket</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/download (1).jpeg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/download (2).jpeg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="Images/download.jpeg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <div class="hero min-h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+              <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </header>
     <main>
@@ -20,10 +115,11 @@
             <footer class="footer p-10 bg-accent-content">
                 <aside>
                   <p class="text-base-200 text-3xl font-bold">Get In Touch</p>
-                  <p class="text-base-200">Dit amet consectetur. Condimentum <br>adipiscing aliquam turpis placerat dolor. Purusbr <br>urna in sit nullam proin.</p>
+                  <p class="text-base-200">We are in available Monday to Thursday. <br>9am to 8pm<br>Contact information are given below</p>
                   <img src="Images/Frame.png" alt="" > 
-                  <p class="text-base-200 flex">hockeys@support.com</p>
-                  <img src="Images/Frame (1).png" alt=""> <p class="text-base-200 ">(+62) 123-321-543</p>
+                  <p class="text-base-200">hockeys@support.com</p>
+                  <img src="Images/Frame (1).png" alt=""> 
+                  <p class="text-base-200">(+62) 123-321-543</p>
                 </aside> 
                 <nav>
                   <header class="footer-title text-base-100">Company</header> 
